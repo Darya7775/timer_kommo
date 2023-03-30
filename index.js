@@ -9,9 +9,9 @@ const createTimerAnimator = () => {
     
     const timer = setInterval(function() {
 
-        let secondsThis = seconds%60;
-        let minutes = seconds/60%60;
-        let hour = seconds/60/60%60;
+        const secondsThis = seconds%60;
+        const minutes = seconds/60%60;
+        const hour = seconds/60/60%60;
 
         if (seconds <= 0) {
             clearInterval(timer);
